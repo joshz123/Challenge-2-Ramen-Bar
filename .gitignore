@@ -1,0 +1,8 @@
+.idea/.name
+*.iml
+*.xml
+*.cmake
+*.make
+*.cbp
+cmake-build-debug
+CMakeLists.txt
