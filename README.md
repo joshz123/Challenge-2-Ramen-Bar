@@ -9,7 +9,7 @@ At any one time, the restaurant bar can hold K people. People line up (queue) in
 For example, suppose R=4 and K=6, and there are four groups of people with sizes [1, 4, 2, 1]. On the first call, the first 2 groups [1,4] eat, leaving an empty seat (the group of 2 doesn't fit, and the group of 1 can't go ahead of them). They eat, then go back into line, which now looks like [2, 1, 1, 4]. On the second call, the bar will accommodate 4 people: [2, 1, 1]. Now the line looks like [4, 2, 1, 1]. The third time, it will accommodate 6 people: [4, 2]. Now the line looks like [1, 1, 4, 2]. Finally, the last call will accommodate 6 people: [1, 1, 4]. The bar made $21 today!
 
 Design a function that takes in parameters R, K, and s (group sizes) and returns how much money the ramen bar makes:
-  int ramen_challenge(int R, int K, int* s)
+  int ramenChallenge(int R, int K, int* s)
 
 Consider the following input (R, K, s) and expected output:
 4, 6, {1,4,2,1} --> 21
