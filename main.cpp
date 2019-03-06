@@ -1,6 +1,8 @@
 #include <iostream>
-
 using namespace std;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 int ramenChallenge(int rounds, int space, int *groups, int number_of_groups) {
     int temp_sum = 0;
@@ -38,14 +40,13 @@ int ramenChallenge(int rounds, int space, int *groups, int number_of_groups) {
     return sum;
 }
 
+=======
+>>>>>>> parent of cca4f28... First iteration of the function
+=======
+>>>>>>> parent of cca4f28... First iteration of the function
+=======
+>>>>>>> parent of cca4f28... First iteration of the function
 int main() {
-    int array1[10] = {2, 4, 2, 3, 4, 2, 1, 2, 1, 3};
-    int array2[1] = {1};
-    int array3[4] = {1, 4, 2, 1};
-
-    cout << ramenChallenge(4, 6, array3, 4) << endl;
-    cout << ramenChallenge(100, 10, array2, 1) << endl;
-    cout << ramenChallenge(5, 5, array1, 10) << endl;
-
-
+    cout << "Hello, World!" << std::endl;
+    return 0;
 }
