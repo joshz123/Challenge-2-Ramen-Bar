@@ -10,7 +10,7 @@ int ramenChallenge(int rounds, int space, int *groups, int number_of_groups) {
     int index_increases = 0;
     while (round_counter <
            rounds) { //todo account for case where the same person cannot eat 2x in one round
-        if (index_increases >= number_of_groups) {
+        if (index_increases >= number_of_groups) {//todo comment adn explain the code
             index_increases = 0;
             round_counter++;
             continue;
@@ -43,9 +43,9 @@ int main() {
     int array2[1] = {1};
     int array3[4] = {1, 4, 2, 1};
 
- //   cout << ramenChallenge(4, 6, array3, 4) << endl;
+    cout << ramenChallenge(4, 6, array3, 4) << endl;
     cout << ramenChallenge(100, 10, array2, 1) << endl;
-//    cout << ramenChallenge(5, 5, array1, 10) << endl;
+    cout << ramenChallenge(5, 5, array1, 10) << endl;
 
 
 }
