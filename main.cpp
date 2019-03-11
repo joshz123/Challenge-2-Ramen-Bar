@@ -2,6 +2,9 @@
 
 using namespace std;
 
+#include <ctime>
+// insert into main function
+
 /* the insight in this problem was that Queues were unnecessary as you were always progressing through the list linearly and as long as you keep track of the rounds as they pass
  * there is no reason to move around items but it is cleaner and easier to keep track of indices and rounds as they pass.
  * This makes the complexity O(n) as you are only ever counting over as many numbers
@@ -53,8 +56,21 @@ int main() {
     cout << ramenChallenge(4, 6, array3, 4) << endl;
     cout << ramenChallenge(100, 10, array2, 1) << endl;
     cout << ramenChallenge(5, 5, array1, 10) << endl;
-    cout << ramenChallenge(100000000, 2, array4, 2) << endl;
     cout << ramenChallenge(1000000, 200, array5, 11) << endl;
+
+
+
+    clock_t start;
+    double duration;
+    start = clock();
+    cout << ramenChallenge(100000000, 2, array4, 2) << endl;
+
+
+
+
+    duration = ( clock() - start ) / (double) CLOCKS_PER_SEC;
+    cout << "Run time: " << duration << endl;
+
     //as you can see the algorithm is blazing quick
 
 
